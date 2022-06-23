@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primeiros passos com o Dom</title>
+  <style>
+    body{
+      background: rgb(36, 110, 183);
+      color: rgb(18, 18, 18);
+      font: normal 12pt Times
+    }
+  </style>
+</head>
+<body>
+  <h1>Nesta aula estou aprendendo a usar o <strong>DOM</strong></h1>
+  <p>Resultado</p>
+  <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+  <div id="msg">Clique aqui</div>
+  <script>
+    var corpo = window.document.body
+    var d = window.document.getElementById("msg")
+    d.style.background = 'green'
+    document.write(d.innerHTML)
+    d.innerText = 'Aguardando'
+    
+   
+  </script>
+</body>
+</html>
